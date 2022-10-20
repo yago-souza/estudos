@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="05-10" id="D3ED06BE-B2D3-1432-473F-F80AB76C725F" version="3.5">
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:23:19 UTC</createdTime>
+<ownerDesignName>05-10</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D3ED06BE-B2D3-1432-473F-F80AB76C725F</designId>
+</OSDM_Design>

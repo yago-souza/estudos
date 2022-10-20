@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="1EC9046E-CA1E-E4D4-E8F5-299E8BF15270" name="GLDEV" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.SchemaObject" propertyParentId="76832804-B1E4-9704-F4FF-FE89ECF816B6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="9EF0B3E0-E6DA-6189-F841-3FB0FBB3E1B2" name="CUS_BUY" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="76832804-B1E4-9704-F4FF-FE89ECF816B6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="58370375-3214-8366-A79E-91A14353A81D" name="NFSCL_HD" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="76832804-B1E4-9704-F4FF-FE89ECF816B6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="2B46F984-56F2-E804-14A2-B41260879CD5" name="SLS_REP" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="76832804-B1E4-9704-F4FF-FE89ECF816B6" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
