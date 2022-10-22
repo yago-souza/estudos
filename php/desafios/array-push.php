@@ -1,27 +1,30 @@
 <?php
 //inserir dados em um array usando estrutura de repetição e exibindo ele na tela.
 
-function numImpar () {
-    for($i=0;$i<100;$i++){
-        if($i % 2 != 0) {
-            echo $i;
-        }
-    }
-
-}
-
-//echo numImpar();
-
 $numerosImpares = [];
+/*
+for($i=1;$i<100;$i++){
+    $p = $i;
+    
+    if($i % 2 != 0) {
+        $impar = $i;
+        return $impar;
+        echo $i;
+    }
+    echo $p.$impar;
+    $numerosImpares += [ $p => $impar];
+    echo $numerosImpares[0];
+}
+*/
 
 for($i=1;$i<100;$i++){
     if($i % 2 != 0) {
-        $numerosImpares += [ $i-1 => $i];
+        $numerosImpares += [ $i*0.5 => $i];
     }
 }
 
 foreach($numerosImpares as $indice => $numImpar) {
-    echo "$indice =>  $numImpar" . PHP_EOL;
+    echo "$indice =>  $numImpar \t" ;
 }
 /*
 for ($i=0; $i<=100; $i++){
@@ -31,5 +34,4 @@ for ($i=0; $i<=100; $i++){
     }
     
 }
-
 */
