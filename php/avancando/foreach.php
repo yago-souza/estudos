@@ -19,7 +19,7 @@ $contasCorrentes['123.258.852-12'] = [
     'titular' => 'Claudia',
     'saldo' => 2000
 ];
-
+//(cada item do array "as (como)" nome do item no array, nesse caso o indice do outro array)
 foreach ($contasCorrentes as $cpf => $conta) {
     echo $cpf . " " . $conta['titular'] . PHP_EOL;
 }
