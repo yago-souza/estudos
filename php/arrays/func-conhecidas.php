@@ -11,3 +11,7 @@ $vetor = [
 foreach ($vetor as $numeral => $nomeNumero) {
     echo "$numeral em português é: $nomeNumero" . PHP_EOL;
 }
+
+//para pegar o tamanho do array, a função sizeof faz o mesmo
+//o tamanho do array fica armazenado nele mesmo, não é necessario percorrelo
+echo "Total: ". count($vetor) . PHP_EOL;

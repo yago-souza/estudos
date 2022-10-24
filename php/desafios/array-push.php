@@ -19,7 +19,8 @@ for($i=1;$i<100;$i++){
 
 for($i=1;$i<100;$i++){
     if($i % 2 != 0) {
-        $numerosImpares += [ $i*0.5 => $i];
+        //$numerosImpares += [ $i*0.5 => $i];
+        $numerosImpares [] = $i;
     }
 }
 
