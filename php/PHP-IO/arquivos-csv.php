@@ -6,7 +6,8 @@ $outrosCursos = file('cursos-php.txt');
 $arquivoCsv = fopen('cursos.csv', 'w');
 // cria os arrays  de cada curso
 foreach ($meusCursos as $curso) {
-    $linha = [trim($curso), 'Sim'];
+    //O utf8_decode tira essa string da tabela utf e coloca na tabela ISO
+    $linha = [trim(utf8_decode($curso)), 'Sim'];
 
     //escreve no arquivo csv a $linha separado por ';'
     fputcsv($arquivoCsv, $linha, ';');
@@ -14,7 +15,7 @@ foreach ($meusCursos as $curso) {
 }
 
 foreach ($outrosCursos as $curso) {
-    $linha = [trim($curso), 'Não'];
+    $linha = [trim(utf8_decode($curso)), 'Não'];
     fputcsv($arquivoCsv, $linha, ';');
     //fwrite($arquivoCsv, implode(',', $linha));
 }
