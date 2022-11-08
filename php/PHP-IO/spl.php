@@ -17,3 +17,5 @@ echo $date->format('d/m/Y') . PHP_EOL;
 $date->setTimestamp($arquivoCursos->getCTime());
 
 echo $date->format('d/m/Y');
+
+//mb_convert_encoding($variavel, 'para qual codificação', de qual codificação está vindo);
