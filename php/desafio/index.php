@@ -1,85 +1,54 @@
 <?php
-
-$APIkey = '96007ba9';
-
-echo "Título do filme:\n";
-    $teclado = fopen('php://stdin', 'r');
-#        $tituloInput = trim(fgets($teclado));
-//Cria o array que vai receber valores aleatorios para o ID 
-$IMDBid = [];
-// Insere 7 numeros no array
-for ($i=0; $i<7; $i++) {
-    array_push($IMDBid, mt_rand(0,9));
-}
-//Transforma o array em string
-$stringIMDBid = implode("", $IMDBid);
-//adiciona o "tt" no array para identificar na API
-echo "tt$stringIMDBid" . PHP_EOL;
-
-$url = "http://www.omdbapi.com/?i=tt$stringIMDBid&apikey=$APIkey";
-
-$json = file_get_contents($url);
-# Transforma o JSON em um objeto
-#$arrayFilme = json_decode($json);
-# Lê o Titulo do Objeto
-#echo ($filme->Title);
-# Transforma o JSON em array
-$arrayFilme = json_decode($json, true);
-
-$titulo = $arrayFilme['Title'];
-$ano = $arrayFilme['Year'];
-$lancamento = $arrayFilme['Released'];
-$duracao = $arrayFilme['Runtime'];
-$genero = $arrayFilme['Genre'];
-$diretor = $arrayFilme['Director'];
-$atores = $arrayFilme['Actors'];
-# Inserir enredo completo
-$enredo = $arrayFilme['Plot'];
-$cartaz = $arrayFilme['Poster'];
-# Ajustar tipo de variavel de Pontuação pois é um outro array
-$pontuacao = $arrayFilme['Ratings'];
-
-
-echo " $titulo, $lancamento, duração $duracao, Diretor $diretor \n\n $enredo";
+        # Chave da API IMDB
+        $APIkey = '96007ba9';
+        # Cria um array com ID dos 250 melhores filmes segundo IMDB
+        $listaFilmes = file('250-melhores-IMDB.txt', FILE_IGNORE_NEW_LINES);
+        # Gera um número aleatório entre 0 e 250
+        $numAleatorio = mt_rand(0,250);
 
 
 
+        echo "Título do filme:\n";
+            $teclado = fopen('php://stdin', 'r');
+                # Tira a quebra de texto do input do teclado e armazena na variavel
+                $tituloInput = trim(fgets($teclado));
+                # Trata o titulo para ficar no formato da URL e armazena na variavel
+                $tituloFormatado = str_replace(' ', '+', $tituloInput);
 
-#$arrayRetornoApi = explode(',', $retornoAPI);
-#echo $retornoAPI . PHP_EOL;
-#var_dump($retornoAPI);
-#echo $arrayRetornoApi[0];
-#var_dump($arrayRetornoApi);
-
-
-//Se o Título retornar vazio executar processo de consulta com id aleatorio
-
-
-    //Se o retorno da API for false tentar novamente
-//Se o Título vier preenchido consultar por ele
-    //Se o retorno da API for false escrever "Filme não encontrado!"
+        # Recebe um ID aleatorio da lista de array
+        $stringIMDBid = $listaFilmes[$numAleatorio];
 
 
+        if ($tituloInput != "") {
+            # URL para pesquisa por titulo
+            $url = "http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey";
+            
+        } else {
+            # URL para pesquisa aleatoria
+            $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey";
+        }
 
-/*
-if ($tituloInput == "") {
-    
-}
-
-
-echo "Diretor:\n";
-    $teclado = fopen('php://stdin', 'r');
-        $diretorInput = trim(fgets($teclado));
-
-echo "Ator:\n";
-     $teclado = fopen('php://stdin', 'r');
-        $atorInput = trim(fgets($teclado));
+        echo "\n    $url    \n";
 
 
-function entradaDados ($texto) {
-    $entrada = trim(fgets(fopen('php://stdin', 'r')));
-    return $entrada;
-}
-*/
+        # Recebe o JSON da API
+        $json = file_get_contents($url);
+        
+        $arrayFilme = json_decode($json, true);
 
-//echo "O filme $tituloInput é dirigido por $diretorInput e tem o ator/atriz $atorInput";
+        $resposta = $arrayFilme['Response'];
+        $titulo = $arrayFilme['Title'];
+        $ano = $arrayFilme['Year'];
+        $lancamento = $arrayFilme['Released'];
+        $duracao = $arrayFilme['Runtime'];
+        $genero = $arrayFilme['Genre'];
+        $diretor = $arrayFilme['Director'];
+        $atores = $arrayFilme['Actors'];
+        # Inserir enredo completo
+        $enredo = $arrayFilme['Plot'];
+        $cartaz = $arrayFilme['Poster'];
+        # Ajustar tipo de variavel de Pontuação pois é um outro array
+        $pontuacao = $arrayFilme['Ratings'];
+
+
+        echo "\n\n Retorno: $resposta \n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n Diretor: $diretor \n\n $enredo \n\n";
