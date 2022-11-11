@@ -6,8 +6,6 @@
         # Gera um número aleatório entre 0 e 250
         $numAleatorio = mt_rand(0,250);
 
-
-
         echo "Título do filme:\n";
             # Recebe uma string digitada pelo usuario
             $teclado = fopen('php://stdin', 'r');
@@ -19,11 +17,10 @@
         # Recebe um ID aleatorio da lista de array
         $stringIMDBid = $listaFilmes[$numAleatorio];
 
-
+        # Se o campo de imput for diferente de vazio a pesquisa será feita por titulo senão será uma pesquisa entre os 250 melhores filmes do IMDB
         if ($tituloInput != "") {
             # URL para pesquisa por titulo
             $url = "http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey&plot=full";
-            
         } else {
             # URL para pesquisa aleatoria
             $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
@@ -36,6 +33,7 @@
 
         $resposta = $arrayFilme['Response'];
 
+        # Trata erro caso o usuário preencha um valor inválido no input 
         if ($resposta == "False") {
             echo "Digite um filme válido ou deixe o campo em branco. \n\n";
         } else {
