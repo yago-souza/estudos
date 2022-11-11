@@ -9,6 +9,7 @@
 
 
         echo "Título do filme:\n";
+            # Recebe uma string digitada pelo usuario
             $teclado = fopen('php://stdin', 'r');
                 # Tira a quebra de texto do input do teclado e armazena na variavel
                 $tituloInput = trim(fgets($teclado));
@@ -21,15 +22,12 @@
 
         if ($tituloInput != "") {
             # URL para pesquisa por titulo
-            $url = "http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey";
+            $url = "http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey&plot=full";
             
         } else {
             # URL para pesquisa aleatoria
-            $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey";
+            $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
         }
-
-        echo "\n    $url    \n";
-
 
         # Recebe o JSON da API
         $json = file_get_contents($url);
@@ -37,18 +35,26 @@
         $arrayFilme = json_decode($json, true);
 
         $resposta = $arrayFilme['Response'];
-        $titulo = $arrayFilme['Title'];
-        $ano = $arrayFilme['Year'];
-        $lancamento = $arrayFilme['Released'];
-        $duracao = $arrayFilme['Runtime'];
-        $genero = $arrayFilme['Genre'];
-        $diretor = $arrayFilme['Director'];
-        $atores = $arrayFilme['Actors'];
-        # Inserir enredo completo
-        $enredo = $arrayFilme['Plot'];
-        $cartaz = $arrayFilme['Poster'];
-        # Ajustar tipo de variavel de Pontuação pois é um outro array
-        $pontuacao = $arrayFilme['Ratings'];
 
+        if ($resposta == "False") {
+            echo "Digite um filme válido ou deixe o campo em branco. \n\n";
+        } else {
+            $titulo = $arrayFilme['Title'];
+            $ano = $arrayFilme['Year'];
+            $lancamento = $arrayFilme['Released'];
+            $duracao = $arrayFilme['Runtime'];
+            $genero = $arrayFilme['Genre'];
+            $diretor = $arrayFilme['Director'];
+            $atores = $arrayFilme['Actors'];
+            $enredo = $arrayFilme['Plot'];
+            $cartaz = $arrayFilme['Poster'];
+            $notaIMDB = $arrayFilme['Ratings'][0]['Source'];
+            $valorIMDB = $arrayFilme['Ratings'][0]['Value'];
+            $notaRT = $arrayFilme['Ratings'][1]['Source'];
+            $valorRT = $arrayFilme['Ratings'][1]['Value'];
 
-        echo "\n\n Retorno: $resposta \n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n Diretor: $diretor \n\n $enredo \n\n";
+            echo "\n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n" .
+            " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredo \n\n ";
+
+            echo "\n $url\n";
+        }
