@@ -4,11 +4,9 @@ class Conta
 {
     public static $numeroDeContas = 0;
     #O método construtor define os atributos na criação do objeto
-    public function __construct(string $cpfTitular, string $nomeTitular)
+    public function __construct(Titular $titular)
     {
-        $this->cpfTitular = $cpfTitular;
-        $this->validaNomeTitular($nomeTitular);
-        $this->nomeTitular = $nomeTitular;
+        $this->Titular = $titular;
         $this->saldo = 0;
         self::$numeroDeContas++;
     }
@@ -49,27 +47,23 @@ class Conta
         return $this->saldo;
     }
 
-    //getCpfTitular
-    public function recuperaCpfTitular(): string
+    public function recuperaNomeTitular():string
     {
-        return $this->cpfTitular;
-    }
-    //getNomeTitular
-    public function recuperaNomeTitular(): string
-    {
-        return $this->nomeTitular;
+        return $this->Titular->recuperaNome();
     }
 
-    private function validaNomeTitular(string $nomeTitular)
+    public function recuperaCpfTitular():string
     {
-        if (strlen($nomeTitular)<5) {
-            echo "Nome precisa ter pelo menos 5 caracteres";
-            exit();
-        }
+        return $this->Titular->recuperaCpf();
     }
 
     public static function recuperaNumeroDeContas ()
     {
         return self::$numeroDeContas;
+    }
+
+    public function __destruct()
+    {
+            self::$numeroDeContas--;
     }
 }
