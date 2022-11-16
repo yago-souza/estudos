@@ -1,21 +1,17 @@
 <?php
 
+require_once 'Cpf.php';
+
 class Titular
 {
-    private string $cpf;
     private string $nome;
+    private string $cpf;
 
-
-    public function __construct(string $cpf, string $nome)
+    public function __construct(Cpf $cpf, string $nome)
     {
-        $this->cpf = $cpf;
+        $this->Cpf = $cpf;
         $this->validaNomeTitular($nome);
         $this->nome = $nome;
-    }
-
-    public function recuperaCpf(): string
-    {
-        return $this->cpf;
     }
 
     public function recuperaNome(): string
@@ -30,4 +26,5 @@ class Titular
             exit();
         }
     }
+
 }

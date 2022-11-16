@@ -54,7 +54,7 @@ class Conta
 
     public function recuperaCpfTitular():string
     {
-        return $this->Titular->recuperaCpf();
+        return $this->Titular->Cpf->recuperaCpf();
     }
 
     public static function recuperaNumeroDeContas ()
