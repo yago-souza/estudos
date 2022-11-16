@@ -1,14 +1,23 @@
 <?php
-#teste commit pelo php storm
+
 class Conta
 {
-    public static $numeroDeContas = 0;
-    #O método construtor define os atributos na criação do objeto
+    private $titular;
+    private $saldo;
+    private static $numeroDeContas = 0;
+
+    # O método construtor define os atributos na criação do objeto
     public function __construct(Titular $titular)
     {
-        $this->Titular = $titular;
+        $this->titular = $titular;
         $this->saldo = 0;
+
         self::$numeroDeContas++;
+    }
+
+    public function __destruct()
+    {
+        self::$numeroDeContas--;
     }
 
     public function saca(float $valorASacar): void
@@ -23,8 +32,8 @@ class Conta
 
     public function deposita(float $valorADepositar): void
     {
-        if ($valorADepositar <= 0) {
-            echo "O valor precisa ser positivio";
+        if ($valorADepositar < 0) {
+            echo "Valor precisa ser positivo";
             return;
         }
 
@@ -38,32 +47,28 @@ class Conta
             return;
         }
 
-        $this->saca($valorATransferir);
+        $this->sacar($valorATransferir);
         $contaDestino->depositar($valorATransferir);
     }
+
     //getSaldo
     public function recuperaSaldo(): float
     {
         return $this->saldo;
     }
 
-    public function recuperaNomeTitular():string
+    public function recuperaNomeTitular(): string
     {
-        return $this->Titular->recuperaNome();
+        return $this->titular->recuperaNome();
     }
 
-    public function recuperaCpfTitular():string
+    public function recuperaCpfTitular(): string
     {
-        return $this->Titular->Cpf->recuperaCpf();
+        return $this->titular->recuperaCpf();
     }
 
-    public static function recuperaNumeroDeContas ()
+    public static function recuperaNumeroDeContas(): int
     {
         return self::$numeroDeContas;
-    }
-
-    public function __destruct()
-    {
-            self::$numeroDeContas--;
     }
 }
