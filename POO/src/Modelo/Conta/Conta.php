@@ -2,18 +2,19 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
-class Conta
+## Para ter um método abstrato a conta precisa ser abstrata
+abstract class Conta
 {
     private $titular;
-    private $saldo;
+    protected $saldo;
     private static $numeroDeContas = 0;
+
 
     # O método construtor define os atributos na criação do objeto
     public function __construct(Titular $titular)
     {
         $this->titular = $titular;
         $this->saldo = 0;
-
         self::$numeroDeContas++;
     }
 
@@ -24,12 +25,14 @@ class Conta
 
     public function saca(float $valorASacar): void
     {
-        if ($valorASacar > $this->saldo) {
+        $tarifaSaque = $valorASacar * $this->percentualTarifa();
+        $valorSaque = $valorASacar + $tarifaSaque;
+        if ($valorSaque > $this->saldo) {
             echo "Saldo indisponível";
             return;
         }
 
-        $this->saldo -= $valorASacar;
+        $this->saldo -= $valorSaque;
     }
 
     public function deposita(float $valorADepositar): void
@@ -40,17 +43,6 @@ class Conta
         }
 
         $this->saldo += $valorADepositar;
-    }
-
-    public function transfere(float $valorATransferir, Conta $contaDestino): void
-    {
-        if ($valorATransferir > $this->saldo) {
-            echo "Saldo indisponível";
-            return;
-        }
-
-        $this->sacar($valorATransferir);
-        $contaDestino->depositar($valorATransferir);
     }
 
     //getSaldo
@@ -73,4 +65,7 @@ class Conta
     {
         return self::$numeroDeContas;
     }
+    ## Abstração para que um metodo seja obrigatorio em classes filhas
+    ## Para ter um método abstrato a conta precisa ser abstrata
+    abstract protected function percentualTarifa(): float;
 }
