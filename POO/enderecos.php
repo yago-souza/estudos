@@ -18,8 +18,12 @@ $outroEndereco = new Endereco(
     '50'
 );
 
-echo $umEndereco->cidade;
-
+echo $umEndereco->cidade . PHP_EOL;
 
 echo $umEndereco . PHP_EOL;
-echo $outroEndereco;
+echo $outroEndereco . PHP_EOL;
+
+$umEndereco->bairro = 'Jardim Record';
+
+echo $umEndereco;
+

@@ -13,8 +13,11 @@ namespace Alura\Banco\Modelo;
  *   @property-read string $numero
  *
  */
-class Endereco
+final class Endereco
 {
+    ## Chama uma Trait (Como se copiasse o código e colasse dentro da classe)
+    use AcessoPropriedades;
+
     private $cidade;
     private $bairro;
     private $rua;
@@ -59,12 +62,17 @@ class Endereco
 
     ## O método mágico __get chamado sempre que um atributo
     ## for acessada sem que você tenha acesso para leitura
-    public function __get(string $nomeAtributo)
+    /*public function __get(string $nomeAtributo)
     {
         ## Concatena 'recupera' com o nome do Atributo
         # alterando a primeira letra para maiuscula
         $metodo = 'recupera' . ucfirst($nomeAtributo);
         return $this->$metodo();
+    }*/
+
+    public function __set(string $nomeAtributo, string $valor): void
+    {
+        $this->$nomeAtributo = $valor;
     }
 
 }
