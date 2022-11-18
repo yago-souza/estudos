@@ -2,6 +2,17 @@
 
 namespace Alura\Banco\Modelo;
 
+
+/**
+ *  Class Endereco
+ * @package Alura\Banco\Modelo
+ * Adiciona um campo de leitura nesse caso para a IDE ajudar na chamada
+ * @property-read string $cidade
+ *   @property-read string $bairro
+ *   @property-read string $rua
+ *   @property-read string $numero
+ *
+ */
 class Endereco
 {
     private $cidade;
@@ -39,4 +50,23 @@ class Endereco
     {
         return $this->numero;
     }
+
+    ## Transforma o objeto em uma string formatada
+    public function __toString(): string
+    {
+        return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}.";
+    }
+
+    ## O método mágico __get chamado sempre que um atributo
+    ## for acessada sem que você tenha acesso para leitura
+    public function __get(string $nomeAtributo)
+    {
+        ## Concatena 'recupera' com o nome do Atributo
+        # alterando a primeira letra para maiuscula
+        $metodo = 'recupera' . ucfirst($nomeAtributo);
+        return $this->$metodo();
+    }
+
 }
+
+
