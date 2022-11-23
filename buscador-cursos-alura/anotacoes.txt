@@ -1,3 +1,6 @@
 Composer pega 
-##Crow percorre o HTML
+##dom Crawler percorre o HTML
 Um pacote para fazer a requisição HTTP
+packagist.org é onde o composer busca os pacotes, mas pode buscar de outros lugares
+Para instalar uma nova dependencia devemos adicionala no composer.json dentro de require e executar o composer update ou fazer apenas o composer require.
+o autoload fica disponível automaticamente na pasta vendor
