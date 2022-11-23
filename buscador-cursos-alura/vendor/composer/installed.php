@@ -3,7 +3,7 @@
         'name' => 'yago-souza/buscador-cursos',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '84321e43ad7b4fbe35675e8388deebb3cdf96faf',
+        'reference' => '9299bd1463b0a34009beb618891d24f14769b4c1',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -148,7 +148,7 @@
         'yago-souza/buscador-cursos' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '84321e43ad7b4fbe35675e8388deebb3cdf96faf',
+            'reference' => '9299bd1463b0a34009beb618891d24f14769b4c1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

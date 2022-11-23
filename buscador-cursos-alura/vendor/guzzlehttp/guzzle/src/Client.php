@@ -230,7 +230,7 @@ class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
             'allow_redirects' => RedirectMiddleware::$defaultSettings,
             'http_errors'     => true,
             'decode_content'  => true,
-            'verify'          => true,
+            'verify'          => false, // mudar para false para deixar enviar request para fora por questoes de cacert.pem resolve o erro CURLE_PEER_FAILED_VERIFICATION (60) fazer apenas local
             'cookies'         => false,
             'idn_conversion'  => false,
         ];
