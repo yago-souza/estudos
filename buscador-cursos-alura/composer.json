@@ -1,0 +1,12 @@
+{
+    "name": "yago-souza/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Yago",
+            "email": "yagos-s@live.com"
+        }
+    ],
+    "require": {}
+}
