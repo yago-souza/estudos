@@ -5,10 +5,11 @@ $outrosCursos = file('cursos-php.txt');
 //cria a planilha cursos.csv
 $arquivoCsv = fopen('cursos.csv', 'w');
 // cria os arrays  de cada curso
+
 foreach ($meusCursos as $curso) {
     //O utf8_decode tira essa string da tabela utf e coloca na tabela ISO
     $linha = [trim(utf8_decode($curso)), 'Sim'];
-
+    var_dump($linha);
     //escreve no arquivo csv a $linha separado por ';'
     fputcsv($arquivoCsv, $linha, ';');
     //fwrite($arquivoCsv, implode(',', $linha));
