@@ -1,4 +1,9 @@
 <?php
+
+require_once 'vendor/autoload.php';
+
+use Stichoza\GoogleTranslate\GoogleTranslate;
+
         # Chave da API IMDB
         $APIkey = '96007ba9';
         # Cria um array com ID dos 250 melhores filmes segundo IMDB
@@ -51,8 +56,14 @@
             $notaRT = $arrayFilme['Ratings'][1]['Source'];
             $valorRT = $arrayFilme['Ratings'][1]['Value'];
 
+            $traduz = new GoogleTranslate('pt'); #tradus para portugues
+            $traduz->setSource();
+            $traduz->setTarget('pt');
+            $enredoTraduzido = $traduz->translate($enredo);
+
+
             echo "\n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n" .
-            " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredo \n\n ";
+            " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredoTraduzido \n\n ";
 
             echo "\n $url\n";
         }
