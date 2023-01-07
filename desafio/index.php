@@ -10,8 +10,6 @@ use Stichoza\GoogleTranslate\GoogleTranslate;
         $APIkey = '96007ba9';
         # Cria um array com ID dos 250 melhores filmes segundo IMDB
         $listaFilmes = file('250-melhores-IMDB.txt', FILE_IGNORE_NEW_LINES);
-        # Gera um número aleatório entre 0 e 250
-
 
         echo "Título do filme:\n";
             # Recebe uma string digitada pelo usuario
@@ -27,34 +25,21 @@ use Stichoza\GoogleTranslate\GoogleTranslate;
         if ($tituloInput != "") {
             # URL para pesquisa por titulo
             $url = "http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey&plot=full";
-            pesquisaFilme($url);
+            retornaFilme($url);
         } else {
+            # Gera um número aleatório entre 0 e 250
             $numAleatorio = mt_rand(0,249);
             # Recebe um ID aleatorio da lista de array
             $stringIMDBid = $listaFilmes[$numAleatorio];
 
             # URL para pesquisa aleatoria
             $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
-            pesquisaFilme($url);
+            retornaFilme($url);
         }
 
+        novaDica($listaFilmes, $APIkey);
 
-        $novaDica = novaDica();
-
-        if ($novaDica == 'y') {
-            $numAleatorio = mt_rand(0,249);
-            popen('cls || clear','w');
-            # Recebe um ID aleatorio da lista de array
-            $stringIMDBid = $listaFilmes[$numAleatorio];
-
-            # URL para pesquisa aleatoria
-            $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
-            pesquisaFilme($url);
-
-            novaDica();
-        }
-
-        function pesquisaFilme($url) {
+        function retornaFilme($url) {
 
             # Recebe o JSON da API
             $json = file_get_contents($url);
@@ -95,12 +80,26 @@ use Stichoza\GoogleTranslate\GoogleTranslate;
             }
         }
 
-        function novaDica(){
+        function novaDica($listaFilmes, $APIkey){
             echo "Quer outra dica?(y/n)\n";
             # Recebe uma string digitada pelo usuario
             $teclado = fopen('php://stdin', 'r');
             # Tira a quebra de texto do input do teclado e armazena na variavel
             $tecladoResposta = trim(fgets($teclado));
-            return $tecladoResposta;
+            #return $tecladoResposta;
+
+            if ($tecladoResposta == 'y') {
+                # Gera um número aleatório entre 0 e 250
+                $numAleatorio = mt_rand(0,249);
+                popen('cls || clear','w');
+                # Recebe um ID aleatorio da lista de array
+                $stringIMDBid = $listaFilmes[$numAleatorio];
+
+                # URL para pesquisa aleatoria
+                $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
+                retornaFilme($url);
+                novaDica($listaFilmes, $APIkey);
+            }
+
         }
 
