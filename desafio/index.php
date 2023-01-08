@@ -1,13 +1,12 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once 'funcoes.php';
 
-use Stichoza\GoogleTranslate\GoogleTranslate;
+# Chave da API IMDB
+$APIkey = '96007ba9';
 
         popen('cls || clear','w');
 
-        # Chave da API IMDB
-        $APIkey = '96007ba9';
         # Cria um array com ID dos 250 melhores filmes segundo IMDB
         $listaFilmes = file('250-melhores-IMDB.txt', FILE_IGNORE_NEW_LINES);
 
@@ -39,67 +38,4 @@ use Stichoza\GoogleTranslate\GoogleTranslate;
 
         novaDica($listaFilmes, $APIkey);
 
-        function retornaFilme($url) {
-
-            # Recebe o JSON da API
-            $json = file_get_contents($url);
-
-            $arrayFilme = json_decode($json, true);
-
-            $resposta = $arrayFilme['Response'];
-
-            # Trata erro caso o usuário preencha um valor inválido no input
-            if ($resposta == "False") {
-                echo "Digite um filme válido ou deixe o campo em branco. \n\n";
-            } else {
-                $titulo = $arrayFilme['Title'];
-                $ano = $arrayFilme['Year'];
-                $lancamento = $arrayFilme['Released'];
-                $duracao = $arrayFilme['Runtime'];
-                $genero = $arrayFilme['Genre'];
-                $diretor = $arrayFilme['Director'];
-                $atores = $arrayFilme['Actors'];
-                $enredo = $arrayFilme['Plot'];
-                $cartaz = $arrayFilme['Poster'];
-                $notaIMDB = $arrayFilme['Ratings'][0]['Source'];
-                $valorIMDB = $arrayFilme['Ratings'][0]['Value'];
-                $notaRT = $arrayFilme['Ratings'][1]['Source'];
-                $valorRT = $arrayFilme['Ratings'][1]['Value'];
-
-                $traduz = new GoogleTranslate('pt'); #tradus para portugues
-                $traduz->setSource();
-                $traduz->setTarget('pt');
-                $enredoTraduzido = $traduz->translate($enredo);
-
-
-                $teste = "\n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n" .
-                    " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredoTraduzido \n\n ";
-                echo $teste;
-                #echo "\n $url\n";
-
-            }
-        }
-
-        function novaDica($listaFilmes, $APIkey){
-            echo "Quer outra dica?(y/n)\n";
-            # Recebe uma string digitada pelo usuario
-            $teclado = fopen('php://stdin', 'r');
-            # Tira a quebra de texto do input do teclado e armazena na variavel
-            $tecladoResposta = trim(fgets($teclado));
-            #return $tecladoResposta;
-
-            if ($tecladoResposta == 'y') {
-                # Gera um número aleatório entre 0 e 250
-                $numAleatorio = mt_rand(0,249);
-                popen('cls || clear','w');
-                # Recebe um ID aleatorio da lista de array
-                $stringIMDBid = $listaFilmes[$numAleatorio];
-
-                # URL para pesquisa aleatoria
-                $url = "http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full";
-                retornaFilme($url);
-                novaDica($listaFilmes, $APIkey);
-            }
-
-        }
-
+        listaFilmes();
