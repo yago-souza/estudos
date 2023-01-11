@@ -68,28 +68,45 @@ function novaDica($listaFilmes, $APIkey){
     }
 }
 
-function listaFilmes(){
+function listaFilmes()
+{
     $client = new Client();
-    $resposta = $client->request('GET', 'https://www.imdb.com/chart/top/?ref_=nv_mv_250');
+    ##$resposta = $client->request('GET', 'https://www.imdb.com/chart/top/?ref_=nv_mv_250');
+    $resposta = $client->request('GET', 'https://www.adorocinema.com/filmes/filme-6/');
     ## Recebe o HTML da página
     $html = $resposta->getBody();
     ## Cria um rastreador
     $crawler = new Crawler();
     ## Adiciona o retorno da pagina HTML ao leitor do dom
     $crawler->addHtmlContent($html);
-    ##tag e classe no html que contem os cursos
-    $titulos = $crawler->filter('td.titleColumn');
+    ##tag e classe no html que contem os titulos
+    $elementosSite = $crawler->filter('div.titlebar-title');
 
+    $arrayTitulo = [];
+
+    foreach ($elementosSite as $elemento) {
+        $arrayTitulo[] = $elemento->textContent;
+
+    }
+    $titulo = $arrayTitulo[0];
+    echo $titulo;
+    return $titulo;
+
+
+/*
     $top250Filmes = fopen('250-melhores-IMDB2.txt', 'w');
     foreach ($titulos as $titulo) {
         $tituloFormatado = trim($titulo->textContent) . PHP_EOL;
         echo $tituloFormatado;
         fwrite($top250Filmes, $tituloFormatado);
-    }
+*/
 }
 
-#listaFilmes();
 
+listaFilmes();
+
+
+/*
 $arquivo = fopen('250-melhores-IMDB2.txt', 'r');
 #enquanto não atingir o fim do arquivo ele le a linha
 while (!feof($arquivo)) {
@@ -98,3 +115,4 @@ while (!feof($arquivo)) {
 
     echo 1 . ltrim($linha);
 }
+*/
