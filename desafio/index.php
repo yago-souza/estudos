@@ -5,7 +5,7 @@ require_once 'funcoes.php';
 # Chave da API IMDB
 $APIkey = '96007ba9';
 
-        popen('cls || clear','w');
+        limpaTerminal();
 
         # Cria um array com ID dos 250 melhores filmes segundo IMDB
         $listaFilmes = file('250-melhores-IMDB.txt', FILE_IGNORE_NEW_LINES);
@@ -18,7 +18,7 @@ $APIkey = '96007ba9';
                     # Trata o titulo para ficar no formato da URL e armazena na variavel
                     $tituloFormatado = str_replace(' ', '+', $tituloInput);
 
-        popen('cls || clear','w');
+        limpaTerminal();
 
         # Se o campo de imput for diferente de vazio a pesquisa será feita por titulo senão será uma pesquisa entre os 250 melhores filmes do IMDB
         if ($tituloInput != "") {
@@ -38,4 +38,4 @@ $APIkey = '96007ba9';
 
         novaDica($listaFilmes, $APIkey);
 
-        listaFilmes();
+        percorreFilme();

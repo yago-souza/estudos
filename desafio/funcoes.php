@@ -6,6 +6,10 @@ use GuzzleHttp\Client;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 use Symfony\Component\DomCrawler\Crawler;
 
+function limpaTerminal() {
+    popen('cls || clear','w');
+}
+
 function retornaFilme($url) {
 
     # Recebe o JSON da API
@@ -68,11 +72,10 @@ function novaDica($listaFilmes, $APIkey){
     }
 }
 
-function listaFilmes()
+function percorreFilme($url, $filtro)
 {
     $client = new Client();
-    ##$resposta = $client->request('GET', 'https://www.imdb.com/chart/top/?ref_=nv_mv_250');
-    $resposta = $client->request('GET', 'https://www.adorocinema.com/filmes/filme-6/');
+    $resposta = $client->request('GET', $url);
     ## Recebe o HTML da página
     $html = $resposta->getBody();
     ## Cria um rastreador
@@ -80,39 +83,46 @@ function listaFilmes()
     ## Adiciona o retorno da pagina HTML ao leitor do dom
     $crawler->addHtmlContent($html);
     ##tag e classe no html que contem os titulos
-    $elementosSite = $crawler->filter('div.titlebar-title');
+    $objetoDOM = $crawler->filter($filtro);
 
-    $arrayTitulo = [];
-
-    foreach ($elementosSite as $elemento) {
-        $arrayTitulo[] = $elemento->textContent;
-
+    foreach ($objetoDOM as $elemento) {
+        $arrayFiltrado[] = $elemento->textContent;
     }
-    $titulo = $arrayTitulo[0];
-    echo $titulo;
-    return $titulo;
+    $texto = $arrayFiltrado;
+    return $texto;
+}
 
-
-/*
-    $top250Filmes = fopen('250-melhores-IMDB2.txt', 'w');
-    foreach ($titulos as $titulo) {
-        $tituloFormatado = trim($titulo->textContent) . PHP_EOL;
-        echo $tituloFormatado;
-        fwrite($top250Filmes, $tituloFormatado);
-*/
+function buscaImagem($url)
+{
+    $client = new Client();
+    $resposta = $client->request('GET', $url);
+    ## Recebe o HTML da página
+    $html = $resposta->getBody();
+    ## Cria um rastreador
+    $crawler = new Crawler();
+    ## Adiciona o retorno da pagina HTML ao leitor do dom
+    $crawler->addHtmlContent($html);
+    ##tag e classe no html que contem os titulos
+    $cartaz = $crawler->filter('img.thumbnail-img')->attr('src');
+    #var_dump($objetoDOM);
+    return $cartaz;
 }
 
 
-listaFilmes();
+$url = 'https://www.adorocinema.com/filmes/filme-178014/';
 
+$arrayInfoFilme =  percorreFilme($url, 'div.meta-body-item');
+## indice 0
+$sinopse = percorreFilme($url,'div.content-txt');
+$cartaz = buscaImagem($url);
+$titulo = percorreFilme($url, 'div.titlebar-title');
+#var_dump();
+$filme = [
+    "tituloBr" => $titulo[0],
+    "tituloOriginal" => $arrayInfoFilme[4],
+    "sinopse" => $sinopse[0],
+    "cartaz" => $cartaz
+];
 
-/*
-$arquivo = fopen('250-melhores-IMDB2.txt', 'r');
-#enquanto não atingir o fim do arquivo ele le a linha
-while (!feof($arquivo)) {
-    //le linha por linha
-    $linha = fgets($arquivo);
-
-    echo 1 . ltrim($linha);
-}
-*/
+limpaTerminal();
+echo PHP_EOL . "Titulo" . PHP_EOL . $filme['tituloBr'] . PHP_EOL . $filme['tituloOriginal'] . PHP_EOL . $filme['sinopse'] . PHP_EOL . $filme['cartaz'];
