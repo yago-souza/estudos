@@ -36,6 +36,7 @@ function retornaFilme($url) {
         $valorIMDB = $arrayFilme['Ratings'][0]['Value'];
         $notaRT = $arrayFilme['Ratings'][1]['Source'];
         $valorRT = $arrayFilme['Ratings'][1]['Value'];
+        $cartaz = $arrayFilme['Poster'];
 
         $traduz = new GoogleTranslate('pt'); #tradus para portugues
         $traduz->setSource();
@@ -46,6 +47,7 @@ function retornaFilme($url) {
             " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredoTraduzido \n\n ";
         echo $teste;
         echo "\n $url\n";
+        echo "\n\n Cartaz:\n $cartaz\n";
     }
 }
 
@@ -124,5 +126,8 @@ $filme = [
     "cartaz" => $cartaz
 ];
 
+
 limpaTerminal();
 echo PHP_EOL . "Titulo" . PHP_EOL . $filme['tituloBr'] . PHP_EOL . $filme['tituloOriginal'] . PHP_EOL . $filme['sinopse'] . PHP_EOL . $filme['cartaz'];
+
+var_dump($arrayInfoFilme);
