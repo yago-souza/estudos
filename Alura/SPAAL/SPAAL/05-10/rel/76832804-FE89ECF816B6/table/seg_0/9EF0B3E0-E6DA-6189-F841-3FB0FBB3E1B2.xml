@@ -1,0 +1,2436 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EF0B3E0-E6DA-6189-F841-3FB0FBB3E1B2" schemaObject="1EC9046E-CA1E-E4D4-E8F5-299E8BF15270" name="CUS_BUY">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>GLDEV</sourceObjSchema>
+<sourceObjName>CUS_BUY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[    Customer Buying information by CCN                      5-00[P710]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CCN" id="2755487E-160D-7CFB-6175-9E35F8688ABD">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CCN</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Corporation Control Number (CCN) ]
+[Heading=     CCN ]
+[Short=     CCN ]
+[Paging=     CCN ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER" id="2B5E279B-FFF2-D417-0F52-DC8B316DEE53">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CUSTOMER</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Identification ]
+[Heading=     Customer ]
+[Short=     Cust ]
+[Paging=     Cust ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_BUY_LOC" id="F8DE6611-D1C3-4E17-5EB8-E108C4847E6D">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CUS_BUY_LOC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Buying Location ]
+[Heading=     Buying Loc ]
+[Short=     Buy Loc ]
+[Paging=     Buy Loc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACK_CODE" id="9964DCFB-D874-8F16-41E1-53D3D395C7A6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>ACK_CODE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Acknowledge Code (blank, "N"ew, "C" (new and change)) ]
+[Heading=     Acknowledgement Code ]
+[Short=     Ack ]
+[Paging=     Ack ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRANCH" id="F69C4947-5D61-DF3C-04B8-C5E1C2539D7E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BRANCH</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Branch Office Identification ]
+[Heading=     Branch ]
+[Short=     Branch ]
+[Paging=     Brch ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_AR_LOC" id="CA10B4A8-3537-0F96-1AD6-7A7A77270F68">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CUS_AR_LOC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Bill-To Location ]
+[Heading=     Location ]
+[Short=     Location ]
+[Paging=     Location ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_CONTACT" id="2A9F26FF-0278-4558-27EF-F4AEAB543423">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CUS_CONTACT</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Buying Location Contact Identification ]
+[Heading=     Buyer Contact ]
+[Short=     Buyer Cont ]
+[Paging=     Buyer Cont ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISC_PCT" id="7299CB46-4641-CF32-B719-F121A60292C3">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>DISC_PCT</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Buying Discount Percent ]
+[Heading=     Discount % ]
+[Short=     Disc % ]
+[Paging=     Disc % ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUS_SHIP_LOC" id="47AF60BC-C6BD-38F4-E711-39A579B11D47">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CUS_SHIP_LOC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Ship-To Location ]
+[Heading=     Ship-To Location ]
+[Short=     Ship Loc ]
+[Paging=     Ship Loc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREIGHT_PAY" id="74A8F501-ACF3-D5BB-E67B-78D1D6A656C3">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>FREIGHT_PAY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Freight Payment Method ("BILL", "COLL", "N/C", PREPAY") ]
+[Heading=     Freight Payment Method ]
+[Short=     Freight Pay ]
+[Paging=     Freight Pay ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PO_REQUIRED" id="8AB3BCAF-BA08-CDAF-42E6-D6F646A579B6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PO_REQUIRED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Purchase Order Required ]
+[Heading=     PO Required ]
+[Short=     PO Reqd ]
+[Paging=     PO Reqd ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_CLASS" id="15BB51B7-3249-CCEB-ED1F-55BEA33FBA68">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_CLASS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Price Class Code ]
+[Heading=     Price Class ]
+[Short=     Prc Cls ]
+[Paging=     Prc Cls ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_REGION" id="91C5D0DC-E2AC-7358-161A-73C34F0F6460">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SALES_REGION</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Region Code ]
+[Heading=     Sales Region Code ]
+[Short=     Region ]
+[Paging=     Region ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_TERR" id="A40F0601-FFCA-4620-17E4-4747A4F1C5B6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SALES_TERR</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Territory Code ]
+[Heading=     Sales Territory Code ]
+[Short=     Territory ]
+[Paging=     Territory ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_TYPE" id="8E712C67-CA0E-9812-E3BD-8C1A319A9F87">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SALES_TYPE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Sales Type ]
+[Heading=     Sales Type ]
+[Short=     Sls Typ ]
+[Paging=     Sls Typ ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TERMS_CODE" id="440B5DC2-CB0D-F5B3-8FAB-A0E331A74AA7">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>TERMS_CODE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Payment Terms Code ]
+[Heading=     Payment Terms ]
+[Short=     Pay Terms ]
+[Paging=     Pay Terms ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGC" id="E35861B0-FB44-BAA2-658E-7D699BDD4F99">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AGC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Accounting Group Code ]
+[Heading=     Customer AGC ]
+[Short=     Cust AGC ]
+[Paging=     AGC ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCY" id="72E37678-7EDF-6425-D4FC-0923FD48E4F6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>CURRENCY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Currency Code ]
+[Heading=     Currency ]
+[Short=     Curr ]
+[Paging=     Curr ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANGUAGE" id="7019F6AF-C28E-CFCC-A76F-50E0BDC7B8C5">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>LANGUAGE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer"s Preferred Language ]
+[Heading=     Language ]
+[Short=     Lang ]
+[Paging=     Lang ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEL_TERM" id="5930800B-7BE4-EB48-A4B7-1DED82FF1147">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>DEL_TERM</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Delivery Terms ]
+[Heading=     Delivery Terms ]
+[Short=     Del Terms ]
+[Paging=     Del Terms ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BILL_BY_PACKLIST" id="8B04D82F-BB59-37F5-2065-21DA31FD6426">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BILL_BY_PACKLIST</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Billing Documents Organized by Packlist, Rather Than Order ]
+[Heading=     Bill by Packlist ]
+[Short=     Bill by Pcklst ]
+[Paging=     Bill by Pcklst ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;
+&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AR_CCN" id="26E1BD3E-45C8-465E-5EEC-6B97CEC56D5E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AR_CCN</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Accounts Receivable Corporation Control Number (AR CCN) ]
+[Heading=     AR CCN ]
+[Short=     AR CCN ]
+[Paging=     AR CCN ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEMAND_STREAM" id="C1AFFF07-7EDF-4AEF-A066-BC4C74FA01EE">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>DEMAND_STREAM</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Master Location Default Demand Stream ]
+[Heading=     Demand Stream ]
+[Short=     Demand Stream ]
+[Paging=     Demand Stream ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELETED" id="43FAFB58-41CC-48A7-9FA9-619F8D1D21AC">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>DELETED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Delete Location When Purging Locations ]
+[Heading=     Delete ]
+[Short=     Del ]
+[Paging=     Del ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_REP" id="4460154E-D61A-E2A5-7781-E4241E0D5915">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SALES_REP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Default primary Sales representative ]
+[Heading=     Sales Rep ]
+[Short=     Rep ]
+[Paging=     Rep ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDI" id="BD1D8ED5-5467-1921-7362-8D618299FBC7">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>EDI</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Accepts EDI Order Changes ]
+[Heading=     EDI Customer ]
+[Short=     EDI Cust ]
+[Paging=     EDI Cust ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ALPHA1" id="8E5B2770-AE2D-BAFC-4088-2D2C9B6DF39A">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_ALPHA1</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined alpha field 1 ]
+[Heading=     User Alpha 1 ]
+[Short=     Alpha 1 ]
+[Paging=     Alpha 1 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ALPHA2" id="8698EE44-2941-6012-FE57-66B632594C73">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_ALPHA2</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined alpha field 2 ]
+[Heading=     User Alpha 2 ]
+[Short=     Alpha 2 ]
+[Paging=     Alpha 2 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ALPHA3" id="90729F93-9A45-C4FF-69DE-DAF6E2416314">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_ALPHA3</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined alpha field 3 ]
+[Heading=     User Alpha 3 ]
+[Short=     Alpha 3 ]
+[Paging=     Alpha 3 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_NUM1" id="88E08983-E010-AB35-6DB6-7F36F91A3E75">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_NUM1</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined numeric field 1 ]
+[Heading=     User Num 1 ]
+[Short=     Num 1 ]
+[Paging=     Num 1 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,11,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_NUM2" id="9182F33B-7B75-59F6-4E5A-840A3CDB02A2">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_NUM2</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined numeric field 2 ]
+[Heading=     User Num 2 ]
+[Short=     Num 2 ]
+[Paging=     Num 2 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>24</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,24,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_NUM3" id="49EBC007-13FE-6B4A-094E-8B5074B02E64">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_NUM3</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined numeric field 3 ]
+[Heading=     User Num 3 ]
+[Short=     Num 3 ]
+[Paging=     Num 3 ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>24</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,24,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_DATE" id="E2290851-6F8C-E2D8-06D6-5A6E9E98F01B">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_DATE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined date field ]
+[Heading=     User Date ]
+[Short=     USER Date ]
+[Paging=     USER Date ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_TIME" id="CACE4760-6408-D6B5-C8C3-BD1BF3906523">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>USER_TIME</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     User defined time field ]
+[Heading=     User Time ]
+[Short=     Time ]
+[Paging=     Time ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNID" id="04AB7E0C-86B6-CB8E-0C8D-2408274C2096">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>UNID</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Unique ID ]
+[Heading=     Unique ID ]
+[Short=     Dq Uid ]
+[Paging=     Dq Uid ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>34 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>34 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOD_DATE" id="C0BB58AB-7233-5E5A-2810-AEB4C2DBA602">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>MOD_DATE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Modification Date ]
+[Heading=     Modification Date ]
+[Short=     Modification Dte ]
+[Paging=     Modification Dte ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_ORDER_PLACED" id="29C90BCD-1C96-C456-36AE-7B8622DDA433">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>LAST_ORDER_PLACED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Last Sales Order Placed by Customer ]
+[Heading=     Last SO Placed ]
+[Short=     Lst SO Placed ]
+[Paging=     Lst SO Placed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_ORDER_SHIPPED" id="F46E1FFD-121C-8894-9C6C-37AB07BE2D11">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>LAST_ORDER_SHIPPED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Last Sales Order Shipped To Customer ]
+[Heading=     Last SO Shipped ]
+[Short=     Lst SO Shppd ]
+[Paging=     Lst SO Shppd ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALT_REASON" id="494C4464-4477-5813-2D8D-5BFB03608FB1">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>HALT_REASON</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Customer Halt Reason Code ]
+[Heading=     Halt Reason ]
+[Short=     Halt Reason ]
+[Paging=     Halt Reason ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ACK" id="1A086CBA-3DDF-3E74-FE90-1EC9BB7EFCD0">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ACK</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Acknowledgement ? ]
+[Heading=     Send Acknowledgement ]
+[Short=     Send Acknowledgement ]
+[Paging=     Send Acknowledgement ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ALLOW_DECREASE" id="C31A88EB-5BD4-09C2-4B1F-F17AD383BE7F">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ALLOW_DECREASE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Is A Quantity Decrease Allowed on Changed Lines ? ]
+[Heading=     Decrease Allowed ]
+[Short=     Decrease Allowed ]
+[Paging=     Decrease Allowed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ALLOW_INCREASE" id="F8EDC63B-0E63-73D6-502A-9E4308B41414">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ALLOW_INCREASE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Is A Quantity Increase Allowed on Changed Lines ? ]
+[Heading=     Increase Allowed ]
+[Short=     Increase Allowed ]
+[Paging=     Increase Allowed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_CHECK_CUS_ITEM" id="B52583FE-C8A1-AD14-6B9D-AA7EE38FA6DA">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_CHECK_CUS_ITEM</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Validate Customer Item ? ]
+[Heading=     Validate Customer Item ]
+[Short=     Validate Cust Itm ]
+[Paging=     Validate Cust Itm ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_CURRENCY_RULE" id="F524A920-D0D7-B53E-90F5-136FC951DE3C">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_CURRENCY_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Alternate Currencies  To That on Customer Definition ? ]
+[Heading=     Allow Alternate Currency ]
+[Short=     Allow Alt Curr ]
+[Paging=     Allow Alt Curr ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_DATE_CHANGE" id="5E2DA16D-8E3D-FD4B-ACA8-D5357452C123">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_DATE_CHANGE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow the Delivery Required Dates To be Changed? ]
+[Heading=     Change Required Date ]
+[Short=     Chg Reqd Dte ]
+[Paging=     Chg Reqd Dte ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_DEL_TERM_RULE" id="597CA22A-DCF3-CCBE-E5C8-5FDFEF74E634">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_DEL_TERM_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Delivery Term Rule for Incoming Orders - "C"ustomer, "G"lovia, "V"al
+[Heading=     Delivery Terms Rule ]
+[Short=     Deliv Terms Rle ]
+[Paging=     Deliv Terms Rle ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_HOLD_ORDERADD" id="FDE1568E-1FF9-A707-F490-B400B8FF0180">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_HOLD_ORDERADD</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Hold Incoming Order Add Document? ]
+[Heading=     Hold Order Add ]
+[Short=     Hld Order Add ]
+[Paging=     Hld Order Add ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_HOLD_ORDERCHANGE" id="9E1E85D5-E549-580B-EE1E-737C395762DB">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_HOLD_ORDERCHANGE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Hold Incoming Order Change Document? ]
+[Heading=     Hold Order Change ]
+[Short=     Hld Order Chg ]
+[Paging=     Hld Order Chg ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_MAS_LOC" id="CF061AE3-F38D-5BF2-3790-ED495ABC1045">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_MAS_LOC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Master Location Identification ]
+[Heading=     Mas Loc ]
+[Short=     Mas Loc ]
+[Paging=     Mas Loc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_MAX_DECREASE" id="250A88BF-75B1-2A4A-737C-E6E4638DF837">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_MAX_DECREASE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Percentage Decrease Allowed on Changed Lines ]
+[Heading=     % Decrease Allowed ]
+[Short=     % Decrease Allowed ]
+[Paging=     % Decrease Allowed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,9,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_MAX_INCREASE" id="8C47367A-BDAB-4417-C266-8780EE5E5A74">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_MAX_INCREASE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Percentage Increase Allowed on Changed Lines ]
+[Heading=     % Increase Allowed ]
+[Short=     % Increase Allowed ]
+[Paging=     % Increase Allowed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,9,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_NC_REASON" id="AB35C077-F4DC-85C9-DC63-8B52CE77D152">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_NC_REASON</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Order No-Charge Reason Code ]
+[Heading=     N/C Reason ]
+[Short=     N/C Rsn ]
+[Paging=     N/C Rsn ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_PARTNER" id="5DA85143-8B72-8D7A-2942-C231A038116E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_PARTNER</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     B2b Partner ? ]
+[Heading=     B2b Partner ]
+[Short=     B2b Prtnr ]
+[Paging=     B2b Prtnr ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_PRICE_CHANGE" id="739F27AF-5D37-D215-638B-98436EBEC744">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_PRICE_CHANGE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Price Changes ]
+[Heading=     Allow Price Change ]
+[Short=     Allow Prc Chg ]
+[Paging=     Allow Prc Chg ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_PRICE_RULE" id="9D5305B6-E959-53C4-BE8A-DA61535C7F50">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_PRICE_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Price Rule for Incoming Orders  - "C"ustomer, "G"lovia, "V"alidate ]
+[Heading=     Price Rule ]
+[Short=     Price Rule ]
+[Paging=     Price Rule ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SIR" id="201A974A-CBE1-08FC-F1FB-6DCA6CE36540">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SIR</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Seller Initiated Response ? ]
+[Heading=     Send SIR ]
+[Short=     Snd SIR ]
+[Paging=     Snd SIR ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SO_PREFIX" id="C7AF9F06-8E5B-32E6-777B-7CBCD5ACD88B">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SO_PREFIX</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Order Number Prefix ]
+[Heading=     Sales Order Number Prefix ]
+[Short=     Sls Order No Prefix ]
+[Paging=     Sls Order No Prefix ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_TERMS_RULE" id="163A2524-EC96-BFC1-E503-948216447452">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_TERMS_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Payment Terms Rule for Incoming Orders - "C"ustomer, "G"lovia, "V"al
+[Heading=     Payment Terms Rule ]
+[Short=     Payment Terms Rule ]
+[Paging=     Payment Terms Rule ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ZERO_PRICE" id="D322D7CB-8272-8138-7DF6-F425837848C2">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ZERO_PRICE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Zero Price ]
+[Heading=     Allow Zero Price ]
+[Short=     Allow Zero Prc ]
+[Paging=     Allow Zero Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_ACCEPT" id="505320D0-CC77-5CB7-A8D4-57E729F42BBA">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_ACCEPT</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Accept Sales Quote ]
+[Heading=     Accept ]
+[Short=     Accept ]
+[Paging=     Accept ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_ACK" id="5963EB3F-5931-946D-2E8E-0A1D46B16D25">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_ACK</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Automatically Send Acknowledgment ]
+[Heading=     Automatic Acknowledgment ]
+[Short=     Auto Acknowledgment ]
+[Paging=     Auto Acknowledgment ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_PREFIX" id="B5266C3B-4437-E579-EAC2-5D0F0BCD9D74">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_PREFIX</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Quote Number Prefix ]
+[Heading=     Sales Quote Prefix ]
+[Short=     Sls Quote Prefix ]
+[Paging=     Sls Quote Prefix ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_STATUS" id="5A8FFA6C-E711-6EBB-9A78-51546DB79E91">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_STATUS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Quote Status ]
+[Heading=     Status ]
+[Short=     Status ]
+[Paging=     Status ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALLOW_SPLIT_SHIP" id="6C7FAF19-3846-BAD2-3798-9296619C5930">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>ALLOW_SPLIT_SHIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     "Y" = SO Delivery Can be Split by Iom ]
+[Heading=     Split Delivery ]
+[Short=     Splt Deliv ]
+[Paging=     Splt Deliv ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_CHG_EARLY_DAYS" id="00ED294D-4786-553F-76E0-5DF8E8ECDF75">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_CHG_EARLY_DAYS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Auto Process Re-Promise Early Days Tolerance ]
+[Heading=     Early Re-Promise Days ]
+[Short=     Early Re-Prom Days ]
+[Paging=     Early Re-Prom Days ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_CHG_EARLY_SOURCE" id="45372AF3-8B30-5225-E19F-553892DBCA76">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_CHG_EARLY_SOURCE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Update From: I=Iom Sched Date, R=Glovia Reqd Date, P=Glovia Promise
+[Heading=     Early Re-Promise Source ]
+[Short=     Early Re-Prom Src ]
+[Paging=     Early Re-Prom Src ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_CHG_LATE_DAYS" id="56B2C97C-0D65-BB41-FA89-ABF81602B276">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_CHG_LATE_DAYS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Auto Process Re-Promise Late Days Tolerance ]
+[Heading=     Late Re-Promise Days ]
+[Short=     Late Re-Prom Days ]
+[Paging=     Late Re-Prom Days ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_CHG_LATE_SOURCE" id="8ED34E84-7B61-4E55-6FBB-B85B300ADC87">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_CHG_LATE_SOURCE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Update From: I=Iom Sched Date, R=Glovia Reqd Date, P=Glovia Promise
+[Heading=     Late Re-Promise Source ]
+[Short=     Late Re-Prom Src ]
+[Paging=     Late Re-Prom Src ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_ORIG_EARLY_DAYS" id="F957F942-F550-D9CA-6F28-FF2EC74728A0">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_ORIG_EARLY_DAYS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Auto Process Early Days Tolerance ]
+[Heading=     Early Promise Days ]
+[Short=     Early Prom Days ]
+[Paging=     Early Prom Days ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_ORIG_EARLY_SOURCE" id="C053A906-24B8-BAC6-7EDB-447A6811170D">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_ORIG_EARLY_SOURCE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Update From: I=Iom Sched Date, R=Glovia Reqd Date, P=Glovia Promise
+[Heading=     Early Promise Source ]
+[Short=     Early Prom Src ]
+[Paging=     Early Prom Src ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_ORIG_LATE_DAYS" id="3FFB19B7-0EAD-C9FA-5184-70B719B278CC">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_ORIG_LATE_DAYS</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Auto Process Late Days Tolerance ]
+[Heading=     Late Promise Days ]
+[Short=     Late Prom Days ]
+[Paging=     Late Prom Days ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_ORIG_LATE_SOURCE" id="1BD30B74-0CB9-1DC0-898A-447F2E1E66B7">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_ORIG_LATE_SOURCE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Update From: I=Iom Sched Date, R=Glovia Reqd Date, P=Glovia Promise
+[Heading=     Late Promise Source ]
+[Short=     Late Prom Src ]
+[Paging=     Late Prom Src ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_PROMISE" id="DF20D620-0742-B449-9093-2648B10EB5E0">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_PROMISE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Communicate Promise Date To Customer ]
+[Heading=     Communicate Promise Date ]
+[Short=     Communicate Prom Dte ]
+[Paging=     Communicate Prom Dte ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_PROMISE_POLICY" id="60CFD6BE-9570-6DE8-C1D5-01139529B2A6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_PROMISE_POLICY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send XML for Entire Order ]
+[Heading=     Promise Policy ]
+[Short=     Prom Pol ]
+[Paging=     Prom Pol ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_REASON" id="D3B4B064-56F7-EE99-4299-EB8995B42E29">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_REASON</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Default Cancel Reason ]
+[Heading=     Default Cancel Reason ]
+[Short=     Deflt Canc Reas ]
+[Paging=     Deflt Canc Reas ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAN_PRIORITY" id="7212E1D1-7D3E-879D-F9C4-909CC30C57E2">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PLAN_PRIORITY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Default Priority 1 - 9; 1 = Lowest, 9 = Highest ]
+[Heading=     Priority ]
+[Short=     Priority ]
+[Paging=     Priority ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREVENT_MULT_SHIP" id="A7EF7021-AC93-C124-9C8E-E5CAFA89D736">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PREVENT_MULT_SHIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     "Y" = SO Line Cannot Have Multiple Deliveries ]
+[Heading=     Prevent Mult Del ]
+[Short=     Prevent Mult Del ]
+[Paging=     Prevent Mult Del ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SI_PREFIX" id="77A28BB9-1775-3CE3-281D-D18918D0A3A9">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SI_PREFIX</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Shipping Instruction Prefix ]
+[Heading=     SI Prefix ]
+[Short=     SI Prefix ]
+[Paging=     SI Prefix ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_HOLD_ORDERCANCEL" id="1C07A483-F4AC-6FAE-0802-481900E51E3E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_HOLD_ORDERCANCEL</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Hold Incoming Order Cancel Document? ]
+[Heading=     Hold Order Cancel ]
+[Short=     Hld Order Canc ]
+[Paging=     Hld Order Canc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NO_TOL_CHK" id="D42337D9-E436-C8C0-24EF-B46F04B8AAB6">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>NO_TOL_CHK</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     "Y" = No Tolerance Check Required ]
+[Heading=     Check Tolerance ]
+[Short=     Chk Tol ]
+[Paging=     Chk Tol ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_MANUAL_ACK" id="52C86B15-CE34-27E6-C81E-340D0A062A05">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_MANUAL_ACK</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Acknowledgement From Manually Created Sales Order ]
+[Heading=     Send Ack From SO Add ]
+[Short=     Snd Ack Frm SO Add ]
+[Paging=     Snd Ack Frm SO Add ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_MISC_RULE" id="B40B9229-67A3-E425-CFA3-104C2BD069E8">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_MISC_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     "A"Ppend or "R"Eplace Miscellaneous (Header and Lines) ]
+[Heading=     Misc Rule ]
+[Short=     Misc Rle ]
+[Paging=     Misc Rle ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_NOTE_RULE" id="AD7233A4-297E-6540-6CF3-08F65A260F40">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_NOTE_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     "A"Ppend or "R"Eplace Notes (Header and Lines) ]
+[Heading=     Note Rule ]
+[Short=     Note Rle ]
+[Paging=     Note Rle ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SEND_CATALOG" id="3FD9BFF0-EC5F-1F94-5311-A5EB22EC20CE">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SEND_CATALOG</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Catalog ? ]
+[Heading=     Send Catalog ]
+[Short=     Snd Catalog ]
+[Paging=     Snd Catalog ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_ALL_COMPONENT" id="67A3A369-3316-1717-D20C-608534C694AB">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_ALL_COMPONENT</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Required Price All Components ]
+[Heading=     Price All Components ]
+[Short=     Prc All Components ]
+[Paging=     Prc All Components ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_EFF" id="53933F7C-5FA8-3878-0476-DC69379101FC">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_EFF</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Pricing Date Policy ]
+[Heading=     Pricing Date ]
+[Short=     Pricing Dte ]
+[Paging=     Pricing Dte ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_METH_CIP" id="5BACA7D8-AFEE-E855-EB14-E9C04958E63C">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_METH_CIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Item/ Customer Price ]
+[Heading=     Item/ Customer Price ]
+[Short=     Itm Cust Prc ]
+[Paging=     Itm Cust Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_METH_IP" id="25464D2A-D0A5-BBC9-35C4-EFC128E3C4A8">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_METH_IP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Item Price ]
+[Heading=     Item Price ]
+[Short=     Itm Prc ]
+[Paging=     Itm Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_METH_SCIP" id="AA5F23B2-F309-3F93-0F59-11C3FF72665C">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_METH_SCIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Source Item/ Customer Price ]
+[Heading=     Source Item/ Customer Price ]
+[Short=     Src Itm Cust Prc ]
+[Paging=     Src Itm Cust Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_METH_SIP" id="DA68BDAF-772A-A083-EB20-341E5D1E766A">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_METH_SIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Source Item Price ]
+[Heading=     Source Item Price ]
+[Short=     Src Itm Prc ]
+[Paging=     Src Itm Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_MIXED" id="4903EEAC-4CA3-AE17-BB10-8ACD4BB29C5A">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_MIXED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Price Mixed ]
+[Heading=     Price Mixed ]
+[Short=     Prc Mixed ]
+[Paging=     Prc Mixed ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE_OPTION" id="9F262846-AEB6-872E-2820-58396ED0F9D1">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>PRICE_OPTION</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Pric Engine ]
+[Heading=     Price Engine ]
+[Short=     Prc Engine ]
+[Paging=     Prc Engine ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_HDR_COMPLETE" id="732601D5-2A60-EDCD-62FF-5A48E6345E8A">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SHIP_HDR_COMPLETE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Ship Order Complete ]
+[Heading=     Ship Order Complete ]
+[Short=     SHP Order Compl ]
+[Paging=     SHP Order Compl ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_LINE_COMPLETE" id="A4407F50-29BF-0B23-03FD-2AC5E6BBACF5">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SHIP_LINE_COMPLETE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Ship Complete Line ]
+[Heading=     Ship Line Complete ]
+[Short=     Ship Line Complete ]
+[Paging=     Ship Line Complete ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALLOW_SUBSTITUTE" id="CD5A58AE-B93A-4E97-EF68-215AF0509F5E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>ALLOW_SUBSTITUTE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Substitute of Item ]
+[Heading=     Allow Substitute ]
+[Short=     Allow Sub ]
+[Paging=     Allow Sub ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_REPRICE_AT_SHIP" id="CB4995C6-5A0A-2791-8DE1-0DAD55AEF70E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>AUTO_REPRICE_AT_SHIP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Auto Reprice at Shipment ]
+[Heading=     Auto Reprice at Shipment ]
+[Short=     Auto Reprice at Shpm ]
+[Paging=     Auto Reprice at Shpm ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ACCEPT_FCST" id="98E280A7-20FF-7643-0DC9-C282A7EC38F4">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ACCEPT_FCST</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Accept Fcst ]
+[Heading=     Accept Fcst ]
+[Short=     Accept Fcst ]
+[Paging=     Accept Fcst ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_ALLOW_FIRM_QUOTE" id="716EA05E-010A-6D41-29FD-3686DA2CF574">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_ALLOW_FIRM_QUOTE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Firm Quotes ]
+[Heading=     Allow Firm Quotes ]
+[Short=     Allow Frm Quotes ]
+[Paging=     Allow Frm Quotes ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_FC_ZERO_QTY_REASON" id="7AAB2509-50AC-4ADE-2C77-903DEC84766C">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_FC_ZERO_QTY_REASON</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Forecast Zero Qty Reason Code ]
+[Heading=     Zero Qty Reason ]
+[Short=     Zero Qty Rsn ]
+[Paging=     Zero Qty Rsn ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_HOLD_SI_ADD" id="74FFD21E-34A0-2745-62B8-0AC1D6C65D7A">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_HOLD_SI_ADD</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Hold Inbound Shipping Instruction Add Document ]
+[Heading=     Hold Order Add ]
+[Short=     Hld Order Add ]
+[Paging=     Hld Order Add ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_HOLD_SI_CANCEL" id="22376001-8B65-F65C-6DB2-19E50DA85E46">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_HOLD_SI_CANCEL</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Hold Inbound Shipping Instruction Cancel Document ]
+[Heading=     Hold Order Add ]
+[Short=     Hld Order Add ]
+[Paging=     Hld Order Add ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_RECEIVE_SI" id="BB34A0B0-C1E7-85D6-DEB8-7A55B6DEBAF4">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_RECEIVE_SI</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Receive Inbound Shipping Instructions ]
+[Heading=     B2b Partner ]
+[Short=     B2b Prtnr ]
+[Paging=     B2b Prtnr ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_REQD_DATE_TOL" id="324B0182-AF17-D62B-4BEC-BE9D4DAF6000">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_REQD_DATE_TOL</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Number of Days That Allow Order Require Date Tolerance ]
+[Heading=     Require Date Tolerance ]
+[Short=     Require Dte Tol ]
+[Paging=     Require Dte Tol ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SEND_FCST_RSP" id="7EF0B694-538E-7BE1-88C0-B3EC49E405D1">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SEND_FCST_RSP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Snd Fcst Rsp ]
+[Heading=     Send Fcst Rsp ]
+[Short=     Snd Fcst Rsp ]
+[Paging=     Snd Fcst Rsp ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SO_SQ_PRICE_RULE" id="8310E3AC-0684-71B4-3CFD-5AA0F44FBCA4">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SO_SQ_PRICE_RULE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Validate Price with Sales Quote ]
+[Heading=     Validate Quote Price ]
+[Short=     Validate Quote Prc ]
+[Paging=     Validate Quote Prc ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_ALLOW_CLOSE" id="B0167A78-C127-8E62-EB8C-2F300135799E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_ALLOW_CLOSE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Allow Close Quote ]
+[Heading=     Allow Close Quote ]
+[Short=     Allow Cls Quote ]
+[Paging=     Allow Cls Quote ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_CLOSE_ANALYST" id="46681C3A-FE76-04B9-FF8B-A50FB712F497">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_CLOSE_ANALYST</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Closed Analyst ]
+[Heading=     Closed Analyst ]
+[Short=     Clsd Analyst ]
+[Paging=     Clsd Analyst ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_LOST_REASON" id="875CCEEE-8522-ECF3-527F-0621494F4008">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_LOST_REASON</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Loss Reason Code ]
+[Heading=     Loss Reason ]
+[Short=     Loss Reas ]
+[Paging=     Loss Reas ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_LOST_TO_COMP" id="F7805EA7-EE9A-D40B-2518-534450BBE567">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_LOST_TO_COMP</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Competitor Lost To ]
+[Heading=     Lost to ]
+[Short=     Lost to ]
+[Paging=     Lost to ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_PROMISE" id="16D60C78-0E5C-A14A-3C62-8BBB341163D5">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_PROMISE</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Quote Promise ]
+[Heading=     Send Quote Promise ]
+[Short=     Snd Quote Prom ]
+[Paging=     Snd Quote Prom ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_PROMISE_POLICY" id="8E8AB618-D0FD-42BD-8086-BD3C9C85D88C">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_PROMISE_POLICY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send XML for Entire Order ]
+[Heading=     Quote Promise Policy ]
+[Short=     Quote Prom Pol ]
+[Paging=     Quote Prom Pol ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_REQUIRED" id="F7822AAE-5BCF-E4C2-F79E-9C1012BFD8BA">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_REQUIRED</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Sales Quote Required ]
+[Heading=     SQ Required ]
+[Short=     SQ Reqd ]
+[Paging=     SQ Reqd ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_QTY_LIMIT" id="73F90924-ED9D-7E2F-415E-74E50B2DB001">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>ORDER_QTY_LIMIT</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Limit Order Quantity To Quote ]
+[Heading=     Limit Order Quantity To Quote ]
+[Short=     Lim Order Qty To Quo ]
+[Paging=     Lim Order Qty To Quo ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPRICE_EFF" id="406F125D-0700-586B-BE08-8D635AFE9662">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>REPRICE_EFF</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Re-Pricing Date Policy ]
+[Heading=     Repricing Date ]
+[Short=     Repricing Date ]
+[Paging=     Repricing Date ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SQ_DURATION" id="FCF1103C-D8F0-45F7-B0C5-352CED4A9171">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>SQ_DURATION</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Number of Day for Setting Expired Date ]
+[Heading=     Quote Duration ]
+[Short=     Quote Duration ]
+[Paging=     Quote Duration ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_BACK_TO_BACK_REC" id="E14CFFBD-CECA-58F6-70F2-376C9F6356CA">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_BACK_TO_BACK_REC</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Back To Back Receiving ]
+[Heading=     Back To Back Receiving ]
+[Short=     Bk To Bk Recvng ]
+[Paging=     Bk To Bk Recvng ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_SQ_ACK_MANUAL" id="B504422D-69FE-0F6C-EB96-129585B9EE73">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_SQ_ACK_MANUAL</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Send Ack From SQ Add ]
+[Heading=     Send Ack From SQ Add ]
+[Short=     Snd Ack Frm SQ Add ]
+[Paging=     Snd Ack Frm SQ Add ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_USE_CUS_ITEM" id="D24B9AF4-8426-A9C5-6146-F8D70F1B8E0E">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_USE_CUS_ITEM</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Use Customer Item AS Item When Vendor Item is Blank in Inbound Order
+[Heading=     Use Cus Item ]
+[Short=     Use Cus Itm ]
+[Paging=     Use Cus Itm ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BB_USE_CURRENCY" id="ACA5FFEF-19A0-63E7-27D0-71C88B238080">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>CUS_BUY</sourceObjSchema>
+<sourceObjName>BB_USE_CURRENCY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[[Help=     Use Customer Buy LOC Currency ]
+[Heading=     Use Cus Buy Currency ]
+[Short=     Use Cus Buy Curr ]
+[Paging=     Use Cus Buy Curr ]]]></commentInRDBMS>
+<ownerDesignName>05-10</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos; &apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3876D88E-0311-5437-A290-03E7057184E9" name="PK_CUS_BUY">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>GLDEV</sourceObjSchema>
+<sourceObjName>PK_CUS_BUY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<ownerDesignName>05-10</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2755487E-160D-7CFB-6175-9E35F8688ABD"/>
+<colUsage columnID="2B5E279B-FFF2-D417-0F52-DC8B316DEE53"/>
+<colUsage columnID="F8DE6611-D1C3-4E17-5EB8-E108C4847E6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBB94A06-B5B6-242C-240C-356B2EAC1A90" schemaObject="1EC9046E-CA1E-E4D4-E8F5-299E8BF15270" name="PK_CUS_BUY">
+<sourceConnName>GLDEV</sourceConnName>
+<sourceObjSchema>GLDEV</sourceObjSchema>
+<sourceObjName>PK_CUS_BUY</sourceObjName>
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:59 UTC</createdTime>
+<ownerDesignName>05-10</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2755487E-160D-7CFB-6175-9E35F8688ABD"/>
+<colUsage columnID="2B5E279B-FFF2-D417-0F52-DC8B316DEE53"/>
+<colUsage columnID="F8DE6611-D1C3-4E17-5EB8-E108C4847E6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

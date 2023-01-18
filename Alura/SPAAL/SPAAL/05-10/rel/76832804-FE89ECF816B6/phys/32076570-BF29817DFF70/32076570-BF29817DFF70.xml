@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g" name="Oracle Database 11g" id="BD44C5C5-A02F-2A32-D8DD-2977643BB309" siteID="32076570-2523-435C-2E92-BF29817DFF70" siteName="Oracle Database 11g" siteType="9">
+<createdBy>Yago</createdBy>
+<createdTime>2022-10-05 14:26:33 UTC</createdTime>
+<ownerDesignName>05-10</ownerDesignName>
+</StorageDesignOraclev11g>
