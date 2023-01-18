@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="GLDEV" directorySegmentName="seg_0" id="1EC9046E-CA1E-E4D4-E8F5-299E8BF15270">
-<createdBy>Yago</createdBy>
-<createdTime>2022-10-05 14:26:33 UTC</createdTime>
-<ownerDesignName>05-10</ownerDesignName>
-</SchemaObject>
