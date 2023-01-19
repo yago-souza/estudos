@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec7af607-7f96-48fe-96c8-bde6abcc0aeb" name="Changes" comment="Organizando pastas" />
+    <list default="true" id="a937d7a2-2cb3-4167-bf21-d9ee91570283" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP-IO/cursos-php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PHP-IO/cursos-php.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desafio/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/buscador-cursos-alura/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -16,24 +21,57 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2KUwL633KhBu7MLkMUNBFLdeNnl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/composer" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/buscador-cursos-alura/vendor/symfony/polyfill-php80" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2HsBoSHqDAajWTVQWfrzA4GbwLd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Yago/Estudos&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Yagos/Desktop/Estudos/projetos",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="funcoes.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Alura/desafio/funcoes.php">
+}]]></component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="console-para-arquivo.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP-IO/console-para-arquivo.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="ecrevendo-na-tela.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/PHP-IO/ecrevendo-na-tela.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/desafio/index.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 8.1" />
@@ -43,35 +81,30 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.funcoes.php" />
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHP Script.ecrevendo-na-tela.php" />
+        <item itemvalue="PHP Script.console-para-arquivo.php" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec7af607-7f96-48fe-96c8-bde6abcc0aeb" name="Changes" comment="" />
-      <created>1674042409333</created>
+      <changelist id="a937d7a2-2cb3-4167-bf21-d9ee91570283" name="Changes" comment="" />
+      <created>1669064085528</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674042409333</updated>
-      <workItem from="1674042411221" duration="1818000" />
+      <updated>1669064085528</updated>
+      <workItem from="1669064086855" duration="1287000" />
+      <workItem from="1669411061060" duration="770000" />
+      <workItem from="1669494192218" duration="1295000" />
+      <workItem from="1669658764627" duration="364000" />
+      <workItem from="1669659166296" duration="62000" />
+      <workItem from="1669682587146" duration="14000" />
+      <workItem from="1672258310904" duration="705000" />
+      <workItem from="1672784004201" duration="682000" />
+      <workItem from="1672956381417" duration="59000" />
     </task>
-    <task id="LOCAL-00001" summary="Organizando pastas">
-      <created>1674042484070</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674042484070</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Organizando pastas">
-      <created>1674042879781</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674042879781</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,9 +120,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Organizando pastas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organizando pastas" />
   </component>
 </project>
