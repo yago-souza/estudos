@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e8b9374-4b46-49d1-aaca-7182ef3315d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Exceptions/pilha.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Exceptions/pilha.php" afterDir="false" />
-    </list>
+    <list default="true" id="249a0d75-fcc3-49ac-935b-05b6f5c7c0eb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +11,17 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="2HrkbHG1obUwaIrIedc0BXd8sH9" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="D:/PROGRAMAS/php-8.1.11-nts-Win32-vs16-x64" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2KWMXqjDgW4k1kqvXwkrNeuCFgY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,13 +38,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0e8b9374-4b46-49d1-aaca-7182ef3315d8" name="Changes" comment="" />
-      <created>1669050660120</created>
+      <changelist id="249a0d75-fcc3-49ac-935b-05b6f5c7c0eb" name="Changes" comment="" />
+      <created>1674085927899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669050660120</updated>
-      <workItem from="1669050661893" duration="8000" />
-      <workItem from="1669056596696" duration="7000" />
+      <updated>1674085927899</updated>
+      <workItem from="1674085929274" duration="1358000" />
+      <workItem from="1674175030345" duration="229000" />
     </task>
     <servers />
   </component>
