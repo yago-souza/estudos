@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9c82385-b312-43e7-8397-0e3b36b05b46" name="Changes" comment="anotacoes.txt">
+      <change beforePath="$PROJECT_DIR$/../desafio/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../desafio/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="18407f3d-64d3-4c1a-8d57-f56423ecee5d" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2HxP9TZceopGJR3kcCMsYEeLqI7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Yago/Estudos/POO",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="buscar-cursos.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/buscar-cursos.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.buscar-cursos.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9c82385-b312-43e7-8397-0e3b36b05b46" name="Changes" comment="" />
+      <created>1669223612302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669223612302</updated>
+      <workItem from="1669223614067" duration="579000" />
+      <workItem from="1669224252049" duration="5045000" />
+      <workItem from="1669229854756" duration="77000" />
+      <workItem from="1669290663754" duration="1543000" />
+      <workItem from="1669294240540" duration="2102000" />
+      <workItem from="1669394400942" duration="14000" />
+      <workItem from="1672241622758" duration="1339000" />
+      <workItem from="1672253768211" duration="123000" />
+      <workItem from="1672316757363" duration="23000" />
+      <workItem from="1672938883891" duration="797000" />
+      <workItem from="1673006059627" duration="52000" />
+    </task>
+    <task id="LOCAL-00001" summary="Iniciando PHP Composer: Composer é um gerenciador de dependências PHP que guarda as dependências dentro do projeto. Criação do composer (composer init), nomenclatura = &quot;autor/nomeProjeto&quot;">
+      <created>1669224999124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669224999124</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adicionando dependencias, fazendo requisição de uma pagina html e retornando os nomes dos cursos">
+      <created>1669229631305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669229631305</updated>
+    </task>
+    <task id="LOCAL-00003" summary="anotacoes.txt">
+      <created>1669229917625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669229917625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="46" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="58" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="28" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Iniciando PHP Composer: Composer é um gerenciador de dependências PHP que guarda as dependências dentro do projeto. Criação do composer (composer init), nomenclatura = &quot;autor/nomeProjeto&quot;" />
+    <MESSAGE value="Adicionando dependencias, fazendo requisição de uma pagina html e retornando os nomes dos cursos" />
+    <MESSAGE value="anotacoes.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="anotacoes.txt" />
+  </component>
+</project>

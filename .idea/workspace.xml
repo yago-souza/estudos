@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a937d7a2-2cb3-4167-bf21-d9ee91570283" name="Changes" comment="">
+    <list default="true" id="ec7af607-7f96-48fe-96c8-bde6abcc0aeb" name="Changes" comment="att">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP-IO/cursos-php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PHP-IO/cursos-php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafio/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/desafio/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2023_08_47_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2023_08_47__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/POO/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2HsBoSHqDAajWTVQWfrzA4GbwLd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Yagos/Desktop/Estudos/projetos",
+    "last_opened_file_path": "D:/Yago/Estudos/Alura/1250-composer-aula2",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -90,7 +93,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a937d7a2-2cb3-4167-bf21-d9ee91570283" name="Changes" comment="" />
+      <changelist id="ec7af607-7f96-48fe-96c8-bde6abcc0aeb" name="Changes" comment="att" />
       <created>1669064085528</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -104,6 +107,8 @@
       <workItem from="1672258310904" duration="705000" />
       <workItem from="1672784004201" duration="682000" />
       <workItem from="1672956381417" duration="59000" />
+      <workItem from="1674826124854" duration="189000" />
+      <workItem from="1678106474477" duration="308000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,49 @@
+Index: index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n\r\nrequire_once 'vendor/autoload.php';\r\n\r\nuse Stichoza\\GoogleTranslate\\GoogleTranslate;\r\n\r\n        # Chave da API IMDB\r\n        $APIkey = '96007ba9';\r\n        # Cria um array com ID dos 250 melhores filmes segundo IMDB\r\n        $listaFilmes = file('250-melhores-IMDB.txt', FILE_IGNORE_NEW_LINES);\r\n        # Gera um número aleatório entre 0 e 250\r\n        $numAleatorio = mt_rand(0,250);\r\n\r\n        echo \"Título do filme:\\n\";\r\n            # Recebe uma string digitada pelo usuario\r\n            $teclado = fopen('php://stdin', 'r');\r\n                # Tira a quebra de texto do input do teclado e armazena na variavel\r\n                $tituloInput = trim(fgets($teclado));\r\n                # Trata o titulo para ficar no formato da URL e armazena na variavel\r\n                $tituloFormatado = str_replace(' ', '+', $tituloInput);\r\n\r\n        # Recebe um ID aleatorio da lista de array\r\n        $stringIMDBid = $listaFilmes[$numAleatorio];\r\n\r\n        # Se o campo de imput for diferente de vazio a pesquisa será feita por titulo senão será uma pesquisa entre os 250 melhores filmes do IMDB\r\n        if ($tituloInput != \"\") {\r\n            # URL para pesquisa por titulo\r\n            $url = \"http://www.omdbapi.com/?t=$tituloFormatado&apikey=$APIkey&plot=full\";\r\n        } else {\r\n            # URL para pesquisa aleatoria\r\n            $url = \"http://www.omdbapi.com/?i=$stringIMDBid&apikey=$APIkey&plot=full\";\r\n        }\r\n\r\n        # Recebe o JSON da API\r\n        $json = file_get_contents($url);\r\n        \r\n        $arrayFilme = json_decode($json, true);\r\n\r\n        $resposta = $arrayFilme['Response'];\r\n\r\n        # Trata erro caso o usuário preencha um valor inválido no input \r\n        if ($resposta == \"False\") {\r\n            echo \"Digite um filme válido ou deixe o campo em branco. \\n\\n\";\r\n        } else {\r\n            $titulo = $arrayFilme['Title'];\r\n            $ano = $arrayFilme['Year'];\r\n            $lancamento = $arrayFilme['Released'];\r\n            $duracao = $arrayFilme['Runtime'];\r\n            $genero = $arrayFilme['Genre'];\r\n            $diretor = $arrayFilme['Director'];\r\n            $atores = $arrayFilme['Actors'];\r\n            $enredo = $arrayFilme['Plot'];\r\n            $cartaz = $arrayFilme['Poster'];\r\n            $notaIMDB = $arrayFilme['Ratings'][0]['Source'];\r\n            $valorIMDB = $arrayFilme['Ratings'][0]['Value'];\r\n            $notaRT = $arrayFilme['Ratings'][1]['Source'];\r\n            $valorRT = $arrayFilme['Ratings'][1]['Value'];\r\n\r\n            $traduz = new GoogleTranslate('pt'); #tradus para portugues\r\n            $traduz->setSource();\r\n            $traduz->setTarget('pt');\r\n            $enredoTraduzido = $traduz->translate($enredo);\r\n\r\n\r\n            echo \"\\n\\n Filme: $titulo \\n Lançamento: $lancamento \\n Duração: $duracao \\n\" .\r\n            \" Diretor: $diretor\\n $notaIMDB: $valorIMDB \\n $notaRT: $valorRT \\n\\n $enredoTraduzido \\n\\n \";\r\n\r\n            echo \"\\n $url\\n\";\r\n        }\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.php b/index.php
+--- a/index.php	(revision 783d505ad4135a4613ede46777a62c6e39cccbd4)
++++ b/index.php	(date 1673011514821)
+@@ -19,6 +19,8 @@
+                 # Trata o titulo para ficar no formato da URL e armazena na variavel
+                 $tituloFormatado = str_replace(' ', '+', $tituloInput);
+ 
++        popen('cls','w');
++
+         # Recebe um ID aleatorio da lista de array
+         $stringIMDBid = $listaFilmes[$numAleatorio];
+ 
+@@ -62,8 +64,26 @@
+             $enredoTraduzido = $traduz->translate($enredo);
+ 
+ 
+-            echo "\n\n Filme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n" .
+-            " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n $enredoTraduzido \n\n ";
++            echo "\nFilme: $titulo \n Lançamento: $lancamento \n Duração: $duracao \n" .
++            " Diretor: $diretor\n $notaIMDB: $valorIMDB \n $notaRT: $valorRT \n\n  \n\n ";
++            echo <<<FINAL
++            $enredoTraduzido
++            FINAL;
++
++            # echo "\n $url\n";
++        }
++
++        echo "\n\n Fazer outra consulta?(y/n)\n";
++        $teclado = fopen('php://stdin', 'r');
++        # Tira a quebra de texto do input do teclado e armazena na variavel
++        $resposta = trim(fgets($teclado));
+ 
+-            echo "\n $url\n";
++        if($resposta == 'y'){
++            popen('cls','w');
++            system("php index.php");
+         }
++
++        function retornoUrl(){
++
++        }
++
